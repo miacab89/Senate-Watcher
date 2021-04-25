@@ -1,10 +1,12 @@
 const api = 'http://localhost:4000';
-const axios = require('axios'); 
+const fetch = require("node-fetch");
+
 
 async function getSenators(api) {
-    const response = await axios.get(api);
-    let data = JSON.stringify(response);
+    const response = await fetch(`${api}`);
+    let data = await response.json();
     console.log(data);
+
     if (response) {
         showloader();
     } else {
@@ -30,10 +32,10 @@ function show(data) {
          </tr>`;
     
     // Loop to access all rows 
-    for (let r of data.json) {
+    for (let r of data.list) {
         table += 
         `<tr> 
-        <td>${r.senator} </td>
+        <td>${r[2].senator} </td>
         <td>${r.asset_description}</td>
         <td>${r.amount}</td> 
         <td>${r.transaction_date}</td>          
