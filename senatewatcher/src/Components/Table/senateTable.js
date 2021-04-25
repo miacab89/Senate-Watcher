@@ -1,9 +1,9 @@
-const api = 'http://localhost:4000';
-const fetch = require("node-fetch");
+const { default: axios } = require("axios");
 
+const api = 'http://localhost:4000';
 
 async function getSenators(api) {
-    const response = await fetch(`${api}`);
+    const response = await axios.get(`${api}`);
     let data = await response.json();
     console.log(data);
 
@@ -42,12 +42,6 @@ function show(data) {
 </tr>`;
     }
     // Setting innerHTML as tab variable
-    table = document.getElementById('senators').innerHTML;
+    document.getElementById('senators').innerHTML = table;
 }
-
-
-
-
-
-
 
