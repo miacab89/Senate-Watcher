@@ -14,7 +14,9 @@
     "cors": "^2.8.5",
     "dom-parser": "^0.1.6",
     "express": "^4.17.1",
+    "global-jsdom": "^8.1.0",
     "node": "^15.12.0",
+    "node-fetch": "^2.6.1",
     "nodemon": "^2.0.7"
   }
 }
