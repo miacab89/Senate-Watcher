@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const all_transactions = require('./all_transactions.json');
-const PORT = process.env.PORT || 4000; 
+const PORT = process.env.PORT || 3000; 
 
 
 // Middleware
