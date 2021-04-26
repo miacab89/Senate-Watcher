@@ -1,0 +1,32 @@
+{
+  "name": "senate-watcher",
+  "version": "1.0.0",
+  "description": "## Follow the Money All information is public domain. Catch for updates on the latest stock transactions conducted between elected officials and corporate donors.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dom-parser": "^0.1.6",
+    "express": "^4.17.1",
+    "global-jsdom": "^8.1.0",
+    "node-fetch": "^2.6.1",
+    "node": "^15.12.0",
+    "nodemon": "^2.0.7",
+    "requirejs": "^2.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miacab89/Senate-Watcher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miacab89/Senate-Watcher/issues"
+  },
+  "homepage": "https://github.com/miacab89/Senate-Watcher#readme"
+}
